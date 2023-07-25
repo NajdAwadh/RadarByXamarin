@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radar.MainPage">
+
+    <StackLayout>
+        <StackLayout x:Name="fileLoad">
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <Label Text="loginSystemApp" 
+                   HorizontalTextAlignment="Start" 
+                   TextColor="White" 
+                   FontSize="25"/>
+            </Frame>
+            <Button 
+            x:Name="loadButton"
+            Text="Sign Up"
+            CornerRadius="5"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Gray"
+            TextColor="White"
+            Padding="40,20,40,20"
+            Clicked="loadButton_Clicked"
+                />
+            <Label
+                
+                Text="File Name" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="fileName" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+                <Label x:Name="fileName" />
+              
+            </StackLayout>
+           
+
+        </StackLayout>
+
+        <StackLayout x:Name="fileContent">
+            <Label
+                Text="ID" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="ID" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+                <Label x:Name="ID" />
+               
+            </StackLayout>
+
+            <Label
+                Text="Time" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="Time" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+               
+                <Label x:Name="Time"/>
+                
+            </StackLayout>
+            <Label
+                Text="3" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="3" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+
+                <Label x:Name="Azimuth"/>
+            
+            </StackLayout>
+            <Label
+                Text="4" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="4" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+                <Label x:Name="Elevation"/>
+            </StackLayout>
+            <Label
+                Text="5" 
+               FontFamily="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               TextColor="Black"
+               Padding="30,10,30,10"/>
+
+            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
+                <Label Text="5" FontSize="20"/>
+                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
+
+                <Label x:Name="Range"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
