@@ -2,121 +2,91 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Radar.MainPage">
-
     <StackLayout>
-        <StackLayout x:Name="fileLoad">
-            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
-                <Label Text="loginSystemApp" 
-                   HorizontalTextAlignment="Start" 
-                   TextColor="White" 
-                   FontSize="25"/>
-            </Frame>
-            <Button 
-            x:Name="loadButton"
-            Text="Sign Up"
-            CornerRadius="5"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            BackgroundColor="Gray"
-            TextColor="White"
-            Padding="40,20,40,20"
-            Clicked="loadButton_Clicked"
-                />
-            <Label
-                
-                Text="File Name" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="fileName" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-                <Label x:Name="fileName" />
-              
+        
+  
+    <StackLayout
+         Orientation="Vertical" HeightRequest="240" WidthRequest="300"
+        
+        Margin="10"
+                 Padding="10"
+                 BackgroundColor="White"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Start">
+            <StackLayout Margin="20"
+                 Padding="20">
+                <Button BackgroundColor="LightGray"
+                FontSize="20"
+                      BorderColor="DodgerBlue"
+                        BorderWidth=".5"
+                         CornerRadius="5"
+                Text="Load File"
+                TextColor="White"
+                        Clicked="loadButton_Clicked"
+                    />
             </StackLayout>
            
+            <StackLayout>
+                <Label Text="File Name"
+                       FontSize="20"/>
+                <Entry x:Name="fileName"
+                    FontSize="15"
+                        IsReadOnly="true"
+                   ></Entry>
+            </StackLayout>
 
         </StackLayout>
-
-        <StackLayout x:Name="fileContent">
-            <Label
-                Text="ID" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="ID" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-                <Label x:Name="ID" />
-               
-            </StackLayout>
-
-            <Label
-                Text="Time" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="Time" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-               
-                <Label x:Name="Time"/>
-                
-            </StackLayout>
-            <Label
-                Text="3" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="3" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-
-                <Label x:Name="Azimuth"/>
+        <!--  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <StackLayout Orientation="Vertical" HeightRequest="240" WidthRequest="300" BackgroundColor="White">-->
+        <StackLayout
+             Orientation="Vertical" HeightRequest="240" WidthRequest="300"
             
+            Margin="10"
+                 Padding="10"
+                 BackgroundColor="White"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Start">
+            
+            <StackLayout>
+                <Label Text="ID"
+                       FontSize="20"/>
+                <Entry x:Name="id" 
+                    FontSize="15"
+                     IsReadOnly="true"
+                   ></Entry>
             </StackLayout>
-            <Label
-                Text="4" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="4" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-                <Label x:Name="Elevation"/>
+            <StackLayout>
+                <Label Text="Time Stamp"
+                       FontSize="20"/>
+                <Entry x:Name="Time"
+                    FontSize="15"
+                        IsReadOnly="true"
+                 ></Entry>
             </StackLayout>
-            <Label
-                Text="5" 
-               FontFamily="Bold"
-               HorizontalTextAlignment="Center"
-               FontSize="30"
-               TextColor="Black"
-               Padding="30,10,30,10"/>
-
-            <StackLayout  Margin="10,10,10,5" Grid.Row="0" Grid.Column="0">
-                <Label Text="5" FontSize="20"/>
-                <BoxView Color="Black" WidthRequest ="100" HeightRequest="1"/>
-
-                <Label x:Name="Range"/>
+            <StackLayout>
+                <Label Text="Azimuth"
+                       FontSize="20"/>
+                <Entry x:Name="Azimuth"
+                    FontSize="15"
+                        IsReadOnly="true"
+                   ></Entry>
             </StackLayout>
-
-
+            <StackLayout>
+                <Label Text="Elevation"
+                       FontSize="20"/>
+                <Entry x:Name="Elevation"
+                    FontSize="15"
+                        IsReadOnly="true"
+                 ></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Range"
+                       FontSize="20"/>
+                <Entry x:Name="Range"
+                    FontSize="15"
+                        IsReadOnly="true"
+                  ></Entry>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
-
 </ContentPage>

@@ -29,20 +29,22 @@ namespace Radar
 
                 if (file != null)
                 {
-                    fileName.Text = file.FileName;
+                    //leName.Text = file.FileName;
                 }
-               // var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read);
+              //var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read);
 
                 if (file != null && file.FileName.EndsWith("txt", StringComparison.OrdinalIgnoreCase))
                 {
+                    fileName.Text = file.FileName;
                     var content = System.IO.File.ReadAllText(file.FullPath);
                    // ID.Text = content;
                     List<String> splitString =  new List<string>();
                     splitString = content.Split(new char[] { ',' }).ToList();
-                    ID.Text = splitString[0];
+                 id.Text = splitString[0];
                     Time.Text = splitString[1];
                     Azimuth.Text = splitString[2];
                     Elevation.Text = splitString[3];
+                    Range.Text = splitString[4];
                 }
             }
             catch { 
